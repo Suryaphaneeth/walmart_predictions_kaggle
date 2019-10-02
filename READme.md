@@ -1,0 +1,3 @@
+# Attempting kaggle competition
+
+* 
