@@ -30,7 +30,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'echo "Helo wor uyf ld"'
+    script: 'echo "Helo wor uyjhgjgjf ld"'
 
 - task: PowerShell@2
   inputs:
