@@ -52,6 +52,7 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: test
 
+
 - task: UniversalPackages@0
   inputs:
     command: 'publish'
@@ -59,6 +60,7 @@ steps:
     feedsToUsePublish: 'internal'
     vstsFeedPublish: '37ece580-4b15-4c8e-85be-ab3d3f739581'
     vstsFeedPackagePublish: 'test_predict'
-    versionOption: 'major'
-    packagePublishDescription: 'test package publish'
+    versionOption: 'custom'
+    versionPublish: '$(MajorVersion).$(MinorVersion).$(PatchVersion)$(rev:.r)'
+    packagePublishDescription: 'This is for testing'
     publishedPackageVar: 'test_predict'
