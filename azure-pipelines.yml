@@ -59,7 +59,7 @@ steps:
     feedsToUsePublish: 'internal'
     vstsFeedPublish: '37ece580-4b15-4c8e-85be-ab3d3f739581'
     vstsFeedPackagePublish: 'test_predict'
-    versionOption: 'custom'
-    versionPublish: 'major.minor'
+    versionOption: 'patch'
     packagePublishDescription: 'This is for testing'
     publishedPackageVar: 'test_predict'
+
