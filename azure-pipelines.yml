@@ -37,6 +37,14 @@ steps:
     targetType: 'inline'
     script: 'echo $(ls)'
 
+    
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: false
 
 - task: PublishBuildArtifacts@1
   displayName: Publish the artifact
