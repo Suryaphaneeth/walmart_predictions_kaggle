@@ -31,7 +31,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'echo "Helo wkugkor kgkjbuyjhgjgjf ld"'
+    script: 'echo "Helo wkuiugiugkor kgkjbuyjhgjgjf ld"'
 
 - task: PowerShell@2
   inputs:
