@@ -18,6 +18,15 @@ variables:
   PatchVersion: 0
   artifactZipName: $(MajorVersion).$(MinorVersion).$(PatchVersion)$(rev:.r)
   
+
+resources:
+  pipelines:
+  - pipeline: Test_predict
+    source: Test_predict
+    trigger: 
+      branches:
+      - master
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
