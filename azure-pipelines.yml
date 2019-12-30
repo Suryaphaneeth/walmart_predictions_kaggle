@@ -17,6 +17,15 @@ variables:
   MinorVersion: 0
   PatchVersion: 0
   artifactZipName: $(MajorVersion).$(MinorVersion).$(PatchVersion)$(rev:.r)
+
+resources:
+  pipelines:
+  - pipeline: Test_predict
+    source: Test_predict 
+    trigger: 
+      branches:
+        include: 
+        - master
   
 steps:
 - script: echo Hello, world!
